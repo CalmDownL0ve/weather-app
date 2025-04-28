@@ -9,7 +9,7 @@ async function getWeather() {
   if (data.cod === 200) {
     document.getElementById('weatherResult').innerHTML = `
       <h2>${data.name}</h2>
-      <p>Temperature: ${data.main.temp}°C</p>
+      <p>Temperature: ${data.main.temp}°F</p>
       <p>Weather: ${data.weather[0].description}</p>
     `;
   } else {
